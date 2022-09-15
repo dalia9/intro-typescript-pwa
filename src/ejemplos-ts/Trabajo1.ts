@@ -1,21 +1,24 @@
-function Datos(){
-    calle:String;
-    pais:String;
-    estado:String;
+interface Datos{
     nombre:String;
     edad:Number;
+    direccion:{
+        calle:string;
+        pais:string;
+        estado:string;
+    }
+    mostrarDireccion:()=>void;
 }
 
 const AlumnoUTL:Datos={
-    nombre:'Mario',
+    nombre:'Dalia',
     edad:23,
     direccion:{
-        calle:'Veracruz',
+        calle:'lolo',
         pais:'MX',
         estado:'GTO'
     },
     mostrarDireccion(){
-        return this.nombre+', '+this.direccion.estado+','+this.direccion.pais';
+        return this.nombre+', '+this.direccion.estado+','+this.direccion.pais;
     }
 }
 
