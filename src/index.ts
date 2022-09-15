@@ -1,26 +1,25 @@
-
-
-//Definicion de interface
-interface Alumno{
-    matricula:number;
-    nombre:string;
-    email:string;
+function Datos(){
+    calle:String;
+    pais:String;
+    estado:String;
+    nombre:String;
+    edad:Number;
 }
 
-//objeto en ts
-const alumno:Alumno={
-    nombre:'juan',
-    matricula:13252,
-    email:"juan@gmail.com"
+const AlumnoUTL:Datos={
+    nombre:'Mario',
+    edad:23,
+    direccion:{
+        calle:'Veracruz',
+        pais:'MX',
+        estado:'GTO'
+    },
+    mostrarDireccion(){
+        return this.nombre+', '+this.direccion.estado+','+this.direccion.pais';
+    }
 }
 
-let mascotas=['perro', 'gato', 'perico']
+const direccion=AlumnoUTL.mostrarDireccion();
+console.log(direccion);
 
-mascotas[1]='shshsh';
-mascotas.push('nuevo')
-
-let tem:(number | string )[]=[]
-tem.push('Nombre');
-tem.push(232);
-
-console.log(alumno)
+//Todos los objetos tienen que tener tipado de datos
