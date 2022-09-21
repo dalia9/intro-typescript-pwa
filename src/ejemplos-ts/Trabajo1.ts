@@ -1,28 +1,17 @@
-interface Datos{
-    nombre:String;
-    edad:Number;
-    direccion:{
-        calle:string;
-        pais:string;
-        estado:string;
-    }
-    mostrarDireccion:()=>void;
+interface FG{
+    a:number;
+    b:number;
+    c:number;
+    solucion1:number;
+    solucion2:number;
 }
 
-const AlumnoUTL:Datos={
-    nombre:'Dalia',
-    edad:23,
-    direccion:{
-        calle:'lolo',
-        pais:'MX',
-        estado:'GTO'
-    },
-    mostrarDireccion(){
-        return this.nombre+', '+this.direccion.estado+','+this.direccion.pais;
-    }
+function FormulaGeneral{
+
+    Math.sqrt();
 }
 
-const direccion=AlumnoUTL.mostrarDireccion();
-console.log(direccion);
+console.log();
 
-//Todos los objetos tienen que tener tipado de datos
+
+//Programa pedir tres numeros que permita calcular la formula general
