@@ -1,4 +1,4 @@
-import {calcularIVA2,Producto} from './ejemplos-ts/05-desestructuracion-Funciones'
+import {calcularIVA2,Producto} from './05-desestructuracion-Funciones'
 
 
 const carrito:Producto[]=[{

@@ -29,7 +29,7 @@ console.log(`El segundo actual es: ${segundo}`);//
 console.log(`La cancion actual es: ${cancion}`);
 console.log(`El autor es: ${autor}`);
 
-const dbz:string[]=['Goku','Vegeta','Trunks','Yamcha']; //Desconstruccion de arreglos
+const dbz:string[]=['Goku','Vegeta','Trunks','Yamcha']; //Desestructuracion de arreglos
 const[a,b,c,d]=dbz; //Primero las posiciones y luego el nombre del arreglo
 console.log(`Personaje 1: ${a}`);
 console.log(`Personaje 1: ${b}`);

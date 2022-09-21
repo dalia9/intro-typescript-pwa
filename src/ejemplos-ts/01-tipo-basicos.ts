@@ -1,4 +1,4 @@
-//variables y ipos de datos
+//variables y tipos de datos
 var num1=2;
 let num2=3;
 const num3=4;
