@@ -1,23 +1,33 @@
-interface FG{
+
+ class valores{
     a:number;
     b:number;
     c:number;
     resultado1:number;
-}
 
-function FormulaG(a:3,b=-2,c=7){
-    let resultado1=(-b - Math.sqrt(Math.pow(b,2)-(4*a*c)))/(2*a);
-    return resultado1;
-    
-}
+    FormulaG():void{
+        let resultado1=0;
+        resultado1=(-this.b + Math.sqrt(Math.pow(this.b,2)-(4*this.a*this.c)))/(2*this.a);
+        //return resultado1;
 
-function FormulaG2(a:3,b=-2,c=7){
+        console.log(`El resultado es: ${this.resultado1}`)
+    }
+ }
+
+
+ let  total = new valores ();
+ total.a=6;
+ total.b=-19;
+ total.c=7;
+total.FormulaG();
+
+/*
+function FormulaG2(){
     let resultado2=(-b - Math.sqrt(Math.pow(b,2)-(4*a*c)))/(2*a);
     return resultado2;
-}
+}*/
 
-const resultado1=FormulaG;
-console.log(`El resultado es: ${resultado1}`)
-
-const resultado2=FormulaG;
-console.log(`El resultado es: ${resultado2}`)
+let valor =new valores()
+valor.a =3;
+valor.b =-4;
+valor.c =9;
